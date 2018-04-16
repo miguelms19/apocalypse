@@ -1,0 +1,7 @@
+{%load static%}
+
+{%block content%}
+{% for event in all_events %}
+  <p>{{event.fields.Event}}</p>
+{%endfor%}
+{%endblock%}
