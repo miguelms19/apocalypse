@@ -10,7 +10,10 @@ Date_Table = Airtable('apptkUXfhIKkSCft0',  # base_id
 # Create your views here.
 def events(request):
     all_events = Event_Table.get_all()
+    #print(all_events)
     return render(request, 'booking/event.html', {'all_events':all_events})
 
 def dates(request):
+    event_dates = Date_Table.get_all()
+    print(event_dates)
     pass
