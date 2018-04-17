@@ -1,9 +1,9 @@
 from django.urls import path
 
-from . import views
+from booking import views
 
 
 urlpatterns = [
     path('', views.events, name='event'),
-    
+
 ]

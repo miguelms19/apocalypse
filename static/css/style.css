@@ -47,11 +47,16 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff url("../img/preloader.svg") no-repeat center center;
 }
 
+/*Icon color */
+.iconcolor{
+  color: #b20000;
+}
+
 /* Back to top button */
 .back-to-top {
   position: fixed;
   display: none;
-  background: rgba(0, 0, 0, 0.2);
+  background: #b20000;
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
@@ -74,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #2dc997;
+  background: #b20000;
   color: #fff;
 }
 
@@ -548,11 +553,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fff;
   padding: 16px;
   border-radius: 50%;
-  border: 2px solid #2dc997;
+  border: 2px solid #b20000;
 }
 
 #about .about-container .icon-box .icon i {
-  color: #2dc997;
+  color: #b20000;
   font-size: 24px;
 }
 
