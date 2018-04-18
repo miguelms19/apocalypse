@@ -16,15 +16,15 @@ def events(request):
     for event in all_events:
         list_of_events.append((event['fields']['Order'], event['fields']['Event'],
                     event['fields']['Price'], event['fields']['Event_Image'][0]['url'],
-                    event['fields']['Description'],event['id']))
+                    event['fields']['Description'], event['id']))
 
     sorted_events = sorted(list_of_events)
-    print("\nthe events are\n")
+    print("\nthe sorted events are\n")
     print(sorted_events)
-    return render(request, 'booking/event.html', {'sorted_events':sorted_events})
+    return render(request, 'booking/event.html', {'sorted_events': sorted_events})
 
 def dates(request, event_id ):
-    event_dates = Date_Table.get_all()
+    event_dates = Date_Table.get_all(formula="FIND(event_id),{Events})")
     print("\nthe dates are\n")
     print(event_dates)
     return render(request, 'booking/dates.html')
