@@ -23,4 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('event/', include('booking.urls')),
+    path('addevent/', views.addevent, name='addevent'),
 ]
