@@ -21,15 +21,17 @@
 
 <!-- Show all movies -->
 <div class="movies">
-{% for event in all_events %}
+{% for event in sorted_events %}
         <div class="movies__item">
             <i class="movies__item-star fa fa-star hide"></i>
             <!--<p class="movies__item-rating hide">{{ movie.fields.Rating }}/10</p>-->
             <!--<button type="button" class="movies__item-expander hide" data-toggle="modal" data-target="#modal-{{event.id}}">Book</button>-->
-            <button type="button"><a href ="/event/{{event.id}}/" >book {{event.fields.Event}} </a></button>
-          <img class="movies__item-image" src="{{ event.fields.Event_Image.0.thumbnails.small.url }}" alt="" />
+            <button type="button"><a href ="/event/{{event.5}}/" >book {{event.1}} </a></button>
+          <img class="movies__item-image" src="{{ event.3 }}" alt="" />
             <div class="movies__item-title">
-              <p>{{ event.fields.Event }}</p>
+              <p>{{ event.1 }}</p>
+              <p>{{ event.2 }}</p>
+              <p>{{ event.4 }}</p>
             </div>
         </div>
 
