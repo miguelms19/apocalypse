@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="266eb569-2e82-4df8-8b59-fcd3adaa7d48" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/apocalypse/static/css/gallery.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/admin/addevent.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/gallery.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/templates/skirmish.html" />
-      <change beforePath="$PROJECT_DIR$/apocalypse/static/css/style.css" afterPath="$PROJECT_DIR$/apocalypse/static/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/apocalypse/urls.py" afterPath="$PROJECT_DIR$/apocalypse/urls.py" />
-      <change beforePath="$PROJECT_DIR$/apocalypse/views.py" afterPath="$PROJECT_DIR$/apocalypse/views.py" />
-      <change beforePath="$PROJECT_DIR$/booking/templates/booking/base.html" afterPath="$PROJECT_DIR$/booking/templates/booking/base.html" />
-      <change beforePath="$PROJECT_DIR$/booking/templates/booking/event.html" afterPath="$PROJECT_DIR$/booking/templates/booking/event.html" />
-      <change beforePath="$PROJECT_DIR$/booking/urls.py" afterPath="$PROJECT_DIR$/booking/urls.py" />
-      <change beforePath="$PROJECT_DIR$/templates/addevent.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" afterPath="$PROJECT_DIR$/templates/home.html" />
-    </list>
+    <list default="true" id="266eb569-2e82-4df8-8b59-fcd3adaa7d48" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,8 +56,8 @@
       <file leaf-file-name="event.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/booking/templates/booking/event.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="425">
+              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -100,7 +87,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-324" />
     <option name="y" value="195" />
     <option name="width" value="1938" />
@@ -129,58 +116,6 @@
             <path>
               <item name="apocalypse" type="b2602c69:ProjectViewProjectNode" />
               <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="booking" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="apocalypse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="apocalypse" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,7 +215,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15917504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -490,8 +425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/booking/templates/booking/event.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="425">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
           <folding />
         </state>
       </provider>
