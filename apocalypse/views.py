@@ -5,4 +5,7 @@ def home(request):
     return render(request, 'home.html')
 
 def addevent(request):
-    return render(request, 'addevent.html')
+    return render(request, 'admin/addevent.html')
+
+def skirmish(request):
+    return render(request, 'skirmish.html')

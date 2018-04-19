@@ -906,13 +906,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .social-links a:hover {
-  background: #2dc997;
+  background: #b20000;
   color: #fff;
 }
 
 #contact .form #sendmessage {
   color: #2dc997;
-  border: 1px solid #2dc997;
+  border: 1px solid #b20000;
   display: none;
   text-align: center;
   padding: 15px;
@@ -949,7 +949,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #2dc997;
+  background: #b20000;
   border: 0;
   padding: 10px 24px;
   color: #fff;
