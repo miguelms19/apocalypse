@@ -13,16 +13,8 @@ def events(request):
     all_events = Event_Table.get_all()
     print("\nthe events are\n")
     print(all_events)
-    list_of_events = []
-    for event in all_events:
-        list_of_events.append((event['fields']['Order'], event['fields']['Event'],
-                    event['fields']['Price'], event['fields']['Event_Image'][0]['url'],
-                    event['fields']['Description'], event['id']))
 
-    sorted_events = sorted(list_of_events)
-    print("\nthe sorted events are\n")
-    print(sorted_events)
-    return render(request, 'booking/event.html', {'sorted_events': sorted_events})
+    return render(request, 'booking/event.html', {'all_events': all_events})
 
 def dates(request, event_id ):
     no_dates = 'no dates available'
@@ -40,7 +32,7 @@ def dates(request, event_id ):
     # print(event_date_id_dic)
 
     available_event_dates = []
-
+    test_list =[]
     for date_id in event_date_id_dic[event_id]:
         if date_id == no_dates:
             available_event_dates.append(date_id)
