@@ -9,3 +9,6 @@ def addevent(request):
 
 def skirmish(request):
     return render(request, 'skirmish.html')
+
+def gallery(request):
+    return render(request, 'gallery.html')
