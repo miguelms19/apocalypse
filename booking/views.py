@@ -11,8 +11,8 @@ Date_Table = Airtable('apptkUXfhIKkSCft0',  # base_id
 # Create your views here.
 def events(request):
     all_events = Event_Table.get_all()
-    print("\nthe events are\n")
-    print(all_events)
+    # print("\nthe events are\n")
+    # print(all_events)
 
     return render(request, 'booking/event.html', {'all_events': all_events})
 
@@ -39,8 +39,7 @@ def dates(request, event_id ):
         else:
             available_event_dates.append(Date_Table.get(date_id)['fields'].get('Date'))
 
-    print(available_event_dates)
-
+    # print(available_event_dates)
     formated_dates=[]
     if no_dates in available_event_dates:
         # print(available_event_dates)
