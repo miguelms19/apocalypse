@@ -25,12 +25,13 @@ SECRET_KEY = 'l0$qugx%y!09loy!t6j39o8+m$6#b)@+f@@o)v$(j1lk$y*@p='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'storages',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -119,7 +120,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'apocalypse/static/')
+    os.path.join(BASE_DIR, 'static/')
 ]
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+
+AWS_ACCESS_KEY_ID = 'AKIAIROMWFUJCRAA6OEQ'
+AWS_SECRET_ACCESS_KEY = 'uPMW3gK7Dqizf3ZfNS2FOSLXJ+EvzMyFN8to/UDL'
+AWS_STORAGE_BUCKET_NAME = 'apoc-static'
+AWS_DEFAULT_ACL = 'public-read' # to make sure all your files gives read only access to the files
+
+CLOUDFRONT_DOMAIN = 'd34dyhwyv6o65k.cloudfront.net'
+CLOUDFRONT_ID = 'E2AZYRJH4CTR00'
+AWS_S3_CUSTOM_DOMAIN = 'd34dyhwyv6o65k.cloudfront.net' # to make sure the url that the files are served from this domain
