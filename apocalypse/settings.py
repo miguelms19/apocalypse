@@ -134,7 +134,7 @@ STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 #MEDIA_URL = "/media/"
 
-MEDIA_ROOT = os.path.join(BASE_DIR, "live-static-files", "media-root")
+#MEDIA_ROOT = os.path.join(BASE_DIR, "live-static-files", "media-root")
 
 #STATICFILES_DIRS = [
 #    os.path.join(BASE_DIR, 'static')
@@ -142,13 +142,13 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "live-static-files", "media-root")
 #STATIC_URL = '/static/'
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+#DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-AWS_ACCESS_KEY_ID = 'AKIAIROMWFUJCRAA6OEQ'
-AWS_SECRET_ACCESS_KEY = 'uPMW3gK7Dqizf3ZfNS2FOSLXJ+EvzMyFN8to/UDL'
-AWS_STORAGE_BUCKET_NAME = 'apoc-static'
-AWS_DEFAULT_ACL = 'public-read' # to make sure all your files gives read only access to the files
+#AWS_ACCESS_KEY_ID = 'AKIAIROMWFUJCRAA6OEQ'
+#AWS_SECRET_ACCESS_KEY = 'uPMW3gK7Dqizf3ZfNS2FOSLXJ+EvzMyFN8to/UDL'
+#AWS_STORAGE_BUCKET_NAME = 'apoc-static'
+#AWS_DEFAULT_ACL = 'public-read' # to make sure all your files gives read only access to the files
 
-CLOUDFRONT_DOMAIN = 'd34dyhwyv6o65k.cloudfront.net'
-CLOUDFRONT_ID = 'E2AZYRJH4CTR00'
-AWS_S3_CUSTOM_DOMAIN = 'd34dyhwyv6o65k.cloudfront.net' # to make sure the url that the files are served from this domain
+#CLOUDFRONT_DOMAIN = 'd34dyhwyv6o65k.cloudfront.net'
+#CLOUDFRONT_ID = 'E2AZYRJH4CTR00'
+#AWS_S3_CUSTOM_DOMAIN = 'd34dyhwyv6o65k.cloudfront.net' # to make sure the url that the files are served from this domain
