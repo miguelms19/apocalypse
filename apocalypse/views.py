@@ -11,6 +11,9 @@ def home(request):
 def addevent(request):
     return render(request, 'admin/addevent.html')
 
+def uploadpic(request):
+    return render(request, 'admin/uploadpic.html')
+
 def skirmish(request):
     return render(request, 'skirmish.html')
 

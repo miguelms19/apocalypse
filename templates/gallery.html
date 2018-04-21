@@ -12,23 +12,21 @@
 
 <div class="container">
 	<div class="row"><!--
-
 Photos from unsplash.com
-
 Follow me on
 Dribbble: https://dribbble.com/supahfunk
 Twitter: https://twitter.com/supahfunk
 Codepen: https://codepen.io/supah/
-
 -->
 
 <div class="gallery">
 	{% for image in all_gallery_images %}
 		<figure>
-			<img src="{{image.fields.Images.0.url}}" alt="" />
+			<img src="{{image.fields.Images.0.url}}" alt="" height="240" width="300"/>
 			<figcaption>{{image.fields.Event}}</figcaption>
 		</figure>
 	{%  endfor %}
+
   <figure>
     <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
     <figcaption>Daytona Beach <small>United States</small></figcaption>
@@ -98,7 +96,6 @@ Codepen: https://codepen.io/supah/
     $('figure').click(function(){
       popup.open($(this));
     });
-
     $(document).on('click', '.popup img', function(){
       return false;
     }).on('click', '.popup', function(){
@@ -126,9 +123,7 @@ Codepen: https://codepen.io/supah/
     }, 100);
   }
 }
-
 popup.init()
-
 </script>
 		<h2>Create your snippet's HTML, CSS and Javascript in the editor tabs</h2>
 	</div>
