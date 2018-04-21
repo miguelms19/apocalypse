@@ -1,4 +1,8 @@
+{% extends 'headfoot.html' %}
+
 {% load static %}
+
+{% block content %}
 
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <link href="{% static 'css/gallery.css' %}" rel="stylesheet">
@@ -129,3 +133,5 @@ popup.init()
 		<h2>Create your snippet's HTML, CSS and Javascript in the editor tabs</h2>
 	</div>
 </div>
+
+{% endblock %}
