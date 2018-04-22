@@ -11,6 +11,11 @@
 
 {% block content %}
 <div id="content-main">
+  <hr>
+  <a href="{% url 'addevent' %}">Add New Event</a><p>
+  <hr>
+  <a href="{% url 'uploadpic' %}">Upload New Pictures to Gallery</a>
+  <p>
 
 {% if app_list %}
     {% for app in app_list %}
@@ -77,6 +82,7 @@
             {% endfor %}
             </ul>
             {% endif %}
+
     </div>
 </div>
 {% endblock %}
