@@ -17,6 +17,9 @@ def uploadpic(request):
 def skirmish(request):
     return render(request, 'skirmish.html')
 
+def milsim(request):
+    return render(request, 'milsim.html')
+    
 def gallery(request):
 
     all_gallery_images = Gallery_Table.get_all()

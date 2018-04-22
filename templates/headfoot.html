@@ -28,7 +28,7 @@
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
   <link href="{% static 'css/creative.min.css' %}" rel="stylesheet">
 
-  
+
 </head>
 <body>
   <header id="header" class="navbar navbar-transparent navbar-fixed-top animated fadeInDown">
@@ -41,8 +41,14 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="{% url 'home' %}">Home</a></li>
-          <li class="menu-has-children"><a href="#">About Us</a>
+          <li class="{% if request.resolver_match.url_name == 'home' %}menu-active{% endif %}"><a href="{% url 'home' %}">Home</a></li>
+          <li class="menu-has-children
+          {% if request.resolver_match.url_name == 'venue' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'whatisairsoft' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'siterules' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'waiver' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'insurance' %}menu-active{% endif %}
+          "><a href="#">About Us</a>
             <ul>
               <li><a href="#">Venue</a></li>
               <li><a href="#">What is Airsoft</a></li>
@@ -51,20 +57,25 @@
               <li><a href="#">Insurance Details</a></li>
             </ul>
           </li>
-          <li class="menu-has-children"><a href="#">Events</a>
+          <li class="menu-has-children
+          {% if request.resolver_match.url_name == 'skirmish' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'milsim' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'under' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'staghen' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'corporate' %}menu-active{% endif %} "><a href="#">Events</a>
             <ul>
               <li><a href="{% url 'skirmish' %}">Skirmish</a></li>
               <li><a href="#">Under 18's</a></li>
-              <li><a href="#">Milsim</a></li>
+              <li><a href="{% url 'milsim' %}">Milsim</a></li>
               <li><a href="#">Stag & Hen Parties</a></li>
               <li><a href="#">Corporate Events</a></li>
             </ul>
           </li>
-          <li><a href="{% url 'gallery' %}">Gallery</a></li>
-          <li><a href="#">Bookings</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li class="{% if request.resolver_match.url_name == 'gallery' %}menu-active{% endif %}"><a href="{% url 'gallery' %}">Gallery</a></li>
+          <li class="{% if request.resolver_match.url_name == 'bookings' %}menu-active{% endif %}"><a href="#">Bookings</a></li>
+          <li class="{% if request.resolver_match.url_name == 'blog' %}menu-active{% endif %}"><a href="#">Blog</a></li>
+          <li class="{% if request.resolver_match.url_name == 'shop' %}menu-active{% endif %}"><a href="#">Shop</a></li>
+          <li class="{% if request.resolver_match.url_name == 'contact' %}menu-active{% endif %}"><a href="#">Contact Us</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>

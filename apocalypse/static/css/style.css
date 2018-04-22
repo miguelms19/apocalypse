@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../images/main-bg.jpg) top center;
+
   background-size: cover;
   position: relative;
 }
@@ -154,7 +154,15 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -25px;
   margin-left: -25px;
 }
-
+.home-bg{
+  background: url(../images/main-bg.jpg) top center;
+}
+.skirmish-bg{
+  background: url(../images/airsoftbooking.jpg) top center;
+}
+.gallery-bg{
+  background: url(../images/stockadeview.jpg) top center;
+}
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
