@@ -20,12 +20,14 @@ Codepen: https://codepen.io/supah/
 -->
 
 <div class="gallery">
-	{% for image in all_gallery_images %}
-		<figure>
-			<img src="{{image.fields.Images.0.url}}" alt="" height="240" width="300"/>
-			<figcaption>{{image.fields.Event}}</figcaption>
-		</figure>
-	{%  endfor %}
+  {% for image in all_gallery_images %}
+    {% for img in image.fields.Images %}
+    <figure>
+      <img src="{{img.url}}" alt="" />
+        <figcaption>{{image.fields.Event}}</figcaption>
+    </figure>
+    {% endfor %}
+  {%  endfor %}
 
   <figure>
     <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
