@@ -19,9 +19,13 @@ def skirmish(request):
 
 def milsim(request):
     return render(request, 'milsim.html')
-    
+
 def gallery(request):
 
     all_gallery_images = Gallery_Table.get_all()
-    # print(all_gallery_images)
-    return render(request, 'gallery.html', {'all_gallery_images': all_gallery_images})
+    gallery = []
+    for images in all_gallery_images:
+        gallery.append((images['createdTime'], images['fields']['Event'], images['fields']['Images']))
+    gallery.sort(reverse=True)
+    return render(request, 'gallery.html', {'gallery': gallery})
+    # return render(request, 'gallery.html', {'all_gallery_images': all_gallery_images})
