@@ -6,7 +6,8 @@
 
 
 <link href="{% static 'css/gallery.css' %}" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+<link rel="stylesheet" href="{% static 'css/fluid-gallery.css' %}">
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!-- Include the above in your HEAD tag -->
 
@@ -24,7 +25,33 @@ Dribbble: https://dribbble.com/supahfunk
 Twitter: https://twitter.com/supahfunk
 Codepen: https://codepen.io/supah/
 -->
+<div class="container gallery-container">
 
+    <h1 class="text-center">Bootstrap 3 Gallery</h1>
+
+    <p class="page-description text-center">Grid Layout With Zoom Effect</p>
+
+    <div class="tz-gallery">
+
+        <div class="row mb-3">
+          {% for image in gallery %}
+            {% for urls in image.2 %}
+            <div class="col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="{{urls.url}}">
+                    <img src="{{urls.url}}" alt="Park" class="card-img-top">
+                    </a>
+                </div>
+            </div>
+            {% endfor %}
+        	{%  endfor %}
+          </div>
+
+     </div>
+
+ </div>
+
+ <!-- Earlier version
 <div class="gallery">
 	{% for image in gallery %}
 		{% for urls in image.2 %}
@@ -34,6 +61,7 @@ Codepen: https://codepen.io/supah/
 		</figure>
 		{% endfor %}
 	{%  endfor %}
+-->
 
   <figure>
     <img src="https://images.unsplash.com/photo-1448814100339-234df1d4005d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600" alt="" />
@@ -136,5 +164,10 @@ popup.init()
 		<h2>Create your snippet's HTML, CSS and Javascript in the editor tabs</h2>
 	</div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
 
+</script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
 {% endblock %}
