@@ -73,7 +73,7 @@
           </li>
           <li class="{% if request.resolver_match.url_name == 'gallery' %}menu-active{% endif %}"><a href="{% url 'gallery' %}">Gallery</a></li>
           <li class="{% if request.resolver_match.url_name == 'bookings' %}menu-active{% endif %}"><a href="#">Bookings</a></li>
-          <li class="{% if request.resolver_match.url_name == 'blog' %}menu-active{% endif %}"><a href="#">Blog</a></li>
+          <li class="{% if request.resolver_match.url_name == 'blog' %}menu-active{% endif %}"><a href="{% url 'blog' %}">Blog</a></li>
           <li class="{% if request.resolver_match.url_name == 'shop' %}menu-active{% endif %}"><a href="#">Shop</a></li>
           <li class="{% if request.resolver_match.url_name == 'contact' %}menu-active{% endif %}"><a href="#">Contact Us</a></li>
         </ul>

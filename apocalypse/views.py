@@ -20,6 +20,12 @@ def skirmish(request):
 def milsim(request):
     return render(request, 'milsim.html')
 
+def blog(request):
+    return render(request, 'blog.html')
+
+def blogdetail(request):
+    return render(request, 'blogdetail.html')
+
 def gallery(request):
 
     all_gallery_images = Gallery_Table.get_all()

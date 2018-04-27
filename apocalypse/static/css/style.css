@@ -163,6 +163,9 @@ h1, h2, h3, h4, h5, h6 {
 .gallery-bg{
   background: url(../images/stockadeview.jpg) top center;
 }
+.blog-bg{
+  background: url(../images/airsoftblog.jpg) top center;
+}
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;

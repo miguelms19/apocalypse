@@ -26,6 +26,8 @@ urlpatterns = [
     path('skirmish/', views.skirmish, name='skirmish'),
     path('milsim/', views.milsim, name='milsim'),
     path('gallery/', views.gallery, name='gallery'),
+    path('blog/', views.blog, name='blog'),
+    path('blogdetail/', views.blogdetail, name='blogdetail'),
     path('admin/addevent/', views.addevent, name='addevent'),
     path('admin/uploadpic/', views.uploadpic, name='uploadpic'),
 ]
