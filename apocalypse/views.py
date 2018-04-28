@@ -51,7 +51,7 @@ def eachblog(request, blog_id):
     changed_date_format = datetime.strptime(blog_date,"%Y-%m-%d").strftime("%B %d, %Y")
     # print(changed_date_format)
 
-    return render(request, 'blogdetail.html',{'blog_detail': blog_detail,
+    return render(request, 'eachblog.html',{'blog_detail': blog_detail,
                                                 'changed_date_format': changed_date_format})
 
 def gallery(request):
