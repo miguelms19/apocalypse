@@ -1,0 +1,26 @@
+{% load static %}
+
+<!-- Bootstrap CSS File -->
+<link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+<link href="{% static 'lib/bootstrap/css/bootstrap.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+<div class="row">
+
+  <div class="container">
+
+    <button type="button" class="btn btn-primary" onclick="goBack()">Back to Admin
+
+    </button>
+    <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script>
+    <iframe class="airtable-embed airtable-dynamic-height" src="https://airtable.com/embed/shrY5xw3zpsOMl0Iq?backgroundColor=yellow"
+    frameborder="0" onmousewheel="" width="100%" height="919" style="background: transparent; border: 1px solid #ccc;"></iframe>
+  </div>
+</div>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

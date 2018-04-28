@@ -29,5 +29,6 @@ urlpatterns = [
     path('blog/', views.blog, name='blog'),
     path('blog/<str:blog_id>/', views.eachblog, name='eachblog'),
     path('admin/addevent/', views.addevent, name='addevent'),
+    path('admin/addblog/', views.addblog, name='addblog'),
     path('admin/uploadpic/', views.uploadpic, name='uploadpic'),
 ]

@@ -17,6 +17,9 @@ def addevent(request):
 def uploadpic(request):
     return render(request, 'admin/uploadpic.html')
 
+def addblog(request):
+    return render(request, 'admin/addblog.html')
+
 def skirmish(request):
     return render(request, 'skirmish.html')
 
