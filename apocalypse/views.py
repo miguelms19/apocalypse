@@ -40,8 +40,6 @@ def blog(request):
 
     return render(request, 'blog.html', {'sorted_blogs':sorted_blogs})
 
-def blogdetail2(request):
-    return render(request, 'blogdetail2.html')
 
 def eachblog(request, blog_id):
     blog_detail = Blog_Table.get(blog_id)

@@ -27,7 +27,6 @@ urlpatterns = [
     path('milsim/', views.milsim, name='milsim'),
     path('gallery/', views.gallery, name='gallery'),
     path('blog/', views.blog, name='blog'),
-    path('blogdetail2/', views.blogdetail2, name='blogdetail2'),
     path('blog/<str:blog_id>/', views.eachblog, name='eachblog'),
     path('admin/addevent/', views.addevent, name='addevent'),
     path('admin/uploadpic/', views.uploadpic, name='uploadpic'),
