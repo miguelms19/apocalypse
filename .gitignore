@@ -1,2 +1,3 @@
 __pycache__/
 aws.txt
+db.sqlite3
