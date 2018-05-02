@@ -155,16 +155,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: -25px;
 }
 .home-bg{
-  background: url(../images/main-bg.jpg) top center;
+  background: url(../images/main-bg2.jpg) top center;
 }
 .skirmish-bg{
-  background: url(../images/airsoftbooking.jpg) top center;
+  background: url(../images/airsoftbooking2.jpg) top center;
 }
 .gallery-bg{
-  background: url(../images/stockadeview.jpg) top center;
+  background: url(../images/stockadeview2.jpg) top center;
 }
 .blog-bg{
-  background: url(../images/airsoftblog.jpg) top center;
+  background: url(../images/airsoftblog2.jpg) top center;
 }
 @media (min-width: 1024px) {
   #hero {
