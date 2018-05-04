@@ -143,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url(../images/main-bg.jpg) top center;
+
   background-size: cover;
   position: relative;
 }
@@ -154,7 +154,24 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: -25px;
   margin-left: -25px;
 }
-
+.home-bg{
+  background: url(../images/main-bg2.jpg) top center;
+}
+.skirmish-bg{
+  background: url(../images/airsoftbooking2.jpg) top center;
+}
+.under18-bg{
+  background: url(../images/under18.jpg) top center;
+}
+.milsim-bg{
+  background: url(../images/milsim.jpg) top center;
+}
+.gallery-bg{
+  background: url(../images/stockadeview2.jpg) top center;
+}
+.blog-bg{
+  background: url(../images/airsoftblog2.jpg) top center;
+}
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
