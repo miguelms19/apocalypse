@@ -4442,7 +4442,6 @@ tbody.collapse.show {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4468,10 +4467,13 @@ tbody.collapse.show {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1.25rem;
+  background-color: #535362;
+  color: #fff;
 }
 
 .card-title {
   margin-bottom: 0.75rem;
+  color: #fff;
 }
 
 .card-subtitle {
@@ -4496,6 +4498,8 @@ tbody.collapse.show {
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #b20000;
+  color: #fff;
 }
 
 .card-header:first-child {

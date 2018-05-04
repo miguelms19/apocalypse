@@ -160,6 +160,12 @@ h1, h2, h3, h4, h5, h6 {
 .skirmish-bg{
   background: url(../images/airsoftbooking2.jpg) top center;
 }
+.under18-bg{
+  background: url(../images/under18.jpg) top center;
+}
+.milsim-bg{
+  background: url(../images/milsim.jpg) top center;
+}
 .gallery-bg{
   background: url(../images/stockadeview2.jpg) top center;
 }

@@ -23,6 +23,9 @@ def addblog(request):
 def skirmish(request):
     return render(request, 'skirmish.html')
 
+def under18(request):
+    return render(request, 'under18.html')
+
 def milsim(request):
     return render(request, 'milsim.html')
 
