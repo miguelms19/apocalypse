@@ -169,6 +169,9 @@ h1, h2, h3, h4, h5, h6 {
 .gallery-bg{
   background: url(../images/stockadeview2.jpg) top center;
 }
+.bookings-bg{
+  background: url(../images/bookings.jpg) top center;
+}v
 .blog-bg{
   background: url(../images/airsoftblog2.jpg) top center;
 }
@@ -768,8 +771,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio .portfolio-item {
-  position: relative;
-  height: 200px;
+  position: absolute;
+  height: inherit;
   overflow: hidden !important;
   margin-bottom: 15px;
   transition: all 350ms ease;

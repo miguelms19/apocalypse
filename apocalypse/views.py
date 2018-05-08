@@ -29,6 +29,9 @@ def under18(request):
 def milsim(request):
     return render(request, 'milsim.html')
 
+def bookings(request):
+    return render(request, 'bookings.html')
+
 def blog(request):
     all_blogs = Blog_Table.get_all()
     # print(all_blogs)

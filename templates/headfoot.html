@@ -72,7 +72,7 @@
             </ul>
           </li>
           <li class="{% if request.resolver_match.url_name == 'gallery' %}menu-active{% endif %}"><a href="{% url 'gallery' %}">Gallery</a></li>
-          <li class="{% if request.resolver_match.url_name == 'bookings' %}menu-active{% endif %}"><a href="#">Bookings</a></li>
+          <li class="{% if request.resolver_match.url_name == 'bookings' %}menu-active{% endif %}"><a href="{% url 'bookings' %}">Bookings</a></li>
         <!-- <li class="{% if request.resolver_match.url_name == 'blog' %}menu-active{% endif %}"><a href="{% url 'blog' %}">Blog</a></li> -->
           <li class="{% if request.resolver_match.url_name == 'shop' %}menu-active{% endif %}"><a href="http://www.apocalypse249.com/webstore/tomatocart/">Shop</a></li>
           <li class="{% if request.resolver_match.url_name == 'contact' %}menu-active{% endif %}"><a href="#">Contact Us</a></li>

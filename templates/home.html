@@ -89,7 +89,7 @@
             <p class="cta-text"> We cater for a variety of events. From regular skirmish days to sniper ops to Under 18's only.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">See our Upcoming Events</a>
+            <a class="cta-btn align-middle" href="{% url 'bookings' %}">See our Upcoming Events</a>
           </div>
         </div>
 
@@ -140,9 +140,9 @@
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="{% url 'skirmish' %}">
-              <img class="img-fluid" src="{% static 'images/1.fw.png' %}" alt="">
+              <img class="img-fluid" src="{% static 'images/thumbnails/1.jpg' %}" alt="">
               <div class="portfolio-box-caption">
-                <img class="img-fluid" src="{% static 'images/thumbnails/1.fw.png' %}" alt="">
+                <img class="img-fluid" src="{% static 'images/1.fw.png' %}" alt="">
 
               </div>
             </a>
