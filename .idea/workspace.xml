@@ -4,12 +4,6 @@
     <list default="true" id="266eb569-2e82-4df8-8b59-fcd3adaa7d48" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/apocalypse/views.py" afterPath="$PROJECT_DIR$/apocalypse/views.py" />
-      <change beforePath="$PROJECT_DIR$/templates/commandpostgallery.html" afterPath="$PROJECT_DIR$/templates/commandpostgallery.html" />
-      <change beforePath="$PROJECT_DIR$/templates/outlininggallery.html" afterPath="$PROJECT_DIR$/templates/outlininggallery.html" />
-      <change beforePath="$PROJECT_DIR$/templates/safezonegallery.html" afterPath="$PROJECT_DIR$/templates/safezonegallery.html" />
-      <change beforePath="$PROJECT_DIR$/templates/trenchesgallery.html" afterPath="$PROJECT_DIR$/templates/trenchesgallery.html" />
-      <change beforePath="$PROJECT_DIR$/templates/under18gallery.html" afterPath="$PROJECT_DIR$/templates/under18gallery.html" />
-      <change beforePath="$PROJECT_DIR$/templates/villagegallery.html" afterPath="$PROJECT_DIR$/templates/villagegallery.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +17,11 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apocalypse/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="106" column="52" lean-forward="false" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
+            <state relative-caret-position="286">
+              <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
               <folding>
-                <element signature="e#3974#4160#0" expanded="false" />
-                <element signature="e#4197#4390#0" expanded="false" />
+                <element signature="e#3965#4151#0" expanded="false" />
+                <element signature="e#4188#4381#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -326,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1526113967534</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="multiple upload option included">
+      <created>1526148136774</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1526148136774</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -437,7 +438,8 @@
     <MESSAGE value="Village gallery functionality inserted. Fix the front-end part" />
     <MESSAGE value="SafeZone gallery functionality inserted. Fix the front-end part" />
     <MESSAGE value="Outlining Stuff gallery functionality inserted. Fix the front-end part" />
-    <option name="LAST_COMMIT_MESSAGE" value="Outlining Stuff gallery functionality inserted. Fix the front-end part" />
+    <MESSAGE value="multiple upload option included" />
+    <option name="LAST_COMMIT_MESSAGE" value="multiple upload option included" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -802,11 +804,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apocalypse/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="106" column="52" lean-forward="false" selection-start-line="106" selection-start-column="52" selection-end-line="106" selection-end-column="52" />
+        <state relative-caret-position="286">
+          <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
           <folding>
-            <element signature="e#3974#4160#0" expanded="false" />
-            <element signature="e#4197#4390#0" expanded="false" />
+            <element signature="e#3965#4151#0" expanded="false" />
+            <element signature="e#4188#4381#0" expanded="false" />
           </folding>
         </state>
       </provider>
