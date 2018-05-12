@@ -15,7 +15,10 @@ SafeZone_Table = Airtable('appZJXumNCOFemo8r',
                                 'Safe Zone', api_key='keyoOFryShWQQ1qGs')
 OutliningStuff_Table = Airtable('appZJXumNCOFemo8r',
                                 'Outlining Stuff', api_key='keyoOFryShWQQ1qGs')
-
+Trenches_Table = Airtable('appZJXumNCOFemo8r',
+                                'Trenches', api_key='keyoOFryShWQQ1qGs')
+Under18_Table = Airtable('appZJXumNCOFemo8r',
+                                'Under 18', api_key='keyoOFryShWQQ1qGs')
 
 def home(request):
     return render(request, 'home.html')
@@ -80,6 +83,14 @@ def gallery(request):
     return render(request, 'gallery.html', {'gallery': gallery})
     # return render(request, 'gallery.html', {'all_gallery_images': all_gallery_images})
 
+def gallery_sort(table_data):
+    sorted_gallery = []
+    for images in table_data:
+        if 'One-Image' in images['fields'].keys():
+            sorted_gallery.append((images['fields']['Number'],
+            images['fields']['One-Image'][0]['url']))
+    sorted_gallery.sort(reverse=True)
+    return sorted_gallery
 
 def commandpost_gallery(request):
     all_command_images = Commandpost_Table.get_all()
@@ -103,7 +114,6 @@ def village_gallery(request):
     # print(village_gallery)
     return render(request, 'villagegallery.html', {'village_gallery':village_gallery})
 
-
 def safezone_gallery(request):
     all_safezone_images = SafeZone_Table.get_all()
     safezone_gallery = []
@@ -125,3 +135,13 @@ def outlining_gallery(request):
     outlining_gallery.sort(reverse=True)
 
     return render(request, 'outlininggallery.html', {'outlining_gallery':outlining_gallery})
+
+def trenches_gallery(request):
+    trenches_data = Trenches_Table.get_all()
+    trenches_gallery = gallery_sort(trenches_data)
+    return render(request, 'trenchesgallery.html', {'trenches_gallery': trenches_gallery})
+
+def under18_gallery(request):
+    under18_data = Under18_Table.get_all()
+    under18_gallery = gallery_sort(under18_data)
+    return render(request, 'under18gallery.html', {'under18_gallery': under18_gallery})
