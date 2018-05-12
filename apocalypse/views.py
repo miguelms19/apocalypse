@@ -7,6 +7,9 @@ Gallery_Table = Airtable('appZJXumNCOFemo8r',  # base_id
               'Gallery Page', api_key='keyoOFryShWQQ1qGs') #apikey
 Blog_Table = Airtable('appf9kdwo9dS1DiM8',
                 'Blog', api_key='keyoOFryShWQQ1qGs')
+Commandpost_Table= Airtable('appZJXumNCOFemo8r',
+                'Command Post', api_key='keyoOFryShWQQ1qGs')
+
 
 def home(request):
     return render(request, 'home.html')
@@ -70,3 +73,15 @@ def gallery(request):
     gallery.sort(reverse=True)
     return render(request, 'gallery.html', {'gallery': gallery})
     # return render(request, 'gallery.html', {'all_gallery_images': all_gallery_images})
+
+
+def commandpost_gallery(request):
+    all_command_images = Commandpost_Table.get_all()
+    cp_gallery = []
+    for images in all_command_images:
+        if 'One-Image' in images['fields'].keys():
+            cp_gallery.append((images['fields']['Number'],
+            images['fields']['One-Image'][0]['url']))
+    cp_gallery.sort(reverse=True)
+    print(cp_gallery)
+    return render(request, 'commandpostgallery.html', {'cp_gallery':cp_gallery})
