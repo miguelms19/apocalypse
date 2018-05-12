@@ -1,3 +1,4 @@
+{% extends 'headfoot.html' %}
 {% load static %}
 
 {% block content%}
@@ -6,13 +7,19 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 <link rel="stylesheet" href="{% static 'css/fluid-gallery.css' %}">
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<section id="hero" class="gallery-bg">
+  <div class="hero-container">
+    <img src="{% static 'images/gallery-image.fw.png' %}" class='hero-image img-fluid'></img>
+  </div>
+</section><!-- #hero -->
+
 <div class="container gallery-container">
 
     <div class="tz-gallery">
 
         <div class="row mb-3">
 
-          <p>this is command post images</p>
           {% for image in cp_gallery %}
             {% for url in image.1 %}
             <div class="col-md-4">
@@ -29,4 +36,11 @@
      </div>
 
  </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
+
+ </script>
+ <script>
+     baguetteBox.run('.tz-gallery');
+ </script>
 {% endblock %}
