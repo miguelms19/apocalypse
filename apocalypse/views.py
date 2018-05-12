@@ -75,13 +75,14 @@ def eachblog(request, blog_id):
 
 def gallery(request):
 
-    all_gallery_images = Gallery_Table.get_all()
-    gallery = []
-    for images in all_gallery_images:
-        gallery.append((images['createdTime'], images['fields']['Event'], images['fields']['Images']))
-    gallery.sort(reverse=True)
-    return render(request, 'gallery.html', {'gallery': gallery})
-    # return render(request, 'gallery.html', {'all_gallery_images': all_gallery_images})
+    '''commented out the code as we do not need the sorting on gallery Page now'''
+    # all_gallery_images = Gallery_Table.get_all()
+    # gallery = []
+    # for images in all_gallery_images:
+    #     gallery.append((images['createdTime'], images['fields']['Event'], images['fields']['Images']))
+    # gallery.sort(reverse=True)
+    # return render(request, 'gallery.html', {'gallery': gallery})
+    return render(request, 'gallery.html')
 
 def gallery_sort(table_data):
     sorted_gallery = []
@@ -94,46 +95,22 @@ def gallery_sort(table_data):
 
 def commandpost_gallery(request):
     all_command_images = Commandpost_Table.get_all()
-    cp_gallery = []
-    for images in all_command_images:
-        if 'One-Image' in images['fields'].keys():
-            cp_gallery.append((images['fields']['Number'],
-            images['fields']['One-Image'][0]['url']))
-    cp_gallery.sort(reverse=True)
-    # print(cp_gallery)
+    cp_gallery = gallery_sort(all_command_images)
     return render(request, 'commandpostgallery.html', {'cp_gallery':cp_gallery})
 
 def village_gallery(request):
     all_village_images = Village_Table.get_all()
-    village_gallery = []
-    for images in all_village_images:
-        if 'One-Image' in images['fields'].keys():
-            village_gallery.append((images['fields']['Number'],
-            images['fields']['One-Image'][0]['url']))
-    village_gallery.sort(reverse=True)
-    # print(village_gallery)
+    village_gallery = gallery_sort(all_village_images)
     return render(request, 'villagegallery.html', {'village_gallery':village_gallery})
 
 def safezone_gallery(request):
     all_safezone_images = SafeZone_Table.get_all()
-    safezone_gallery = []
-    for images in all_safezone_images:
-        if 'One-Image' in images['fields'].keys():
-            safezone_gallery.append((images['fields']['Number'],
-            images['fields']['One-Image'][0]['url']))
-    safezone_gallery.sort(reverse=True)
-
+    safezone_gallery = gallery_sort(all_safezone_images)
     return render(request, 'safezonegallery.html', {'safezone_gallery':safezone_gallery})
 
 def outlining_gallery(request):
     all_outlining_images = OutliningStuff_Table.get_all()
-    outlining_gallery = []
-    for images in all_outlining_images:
-        if 'One-Image' in images['fields'].keys():
-            outlining_gallery.append((images['fields']['Number'],
-            images['fields']['One-Image'][0]['url']))
-    outlining_gallery.sort(reverse=True)
-
+    outlining_gallery = gallery_sort(all_outlining_images)
     return render(request, 'outlininggallery.html', {'outlining_gallery':outlining_gallery})
 
 def trenches_gallery(request):
