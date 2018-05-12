@@ -24,6 +24,8 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('event/', include('booking.urls')),
     path('skirmish/', views.skirmish, name='skirmish'),
+    path('venue/', views.venue, name='venue'),
+    path('airsoft/', views.airsoft, name='airsoft'),
     path('under18/', views.under18, name='under18'),
     path('milsim/', views.milsim, name='milsim'),
     path('gallery/', views.gallery, name='gallery'),

@@ -11,6 +11,12 @@ Blog_Table = Airtable('appf9kdwo9dS1DiM8',
 def home(request):
     return render(request, 'home.html')
 
+def venue(request):
+    return render(request, 'venue.html')
+
+def airsoft(request):
+    return render(request, 'whatisairsoft.html')
+
 def addevent(request):
     return render(request, 'admin/addevent.html')
 

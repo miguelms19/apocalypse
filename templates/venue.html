@@ -1,0 +1,109 @@
+{% extends 'headfoot.html' %}
+{% load static %}
+
+
+{% block content %}
+<link href="{% static 'css/about.css' %}" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+<section id="hero" class="bookings-bg">
+  <div class="hero-container">
+    <img src="{% static 'images/venue-image.fw.png' %}" class='hero-image img-fluid'></img>
+  </div>
+</section><!-- #hero -->
+
+<section id="about" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">Apocalypse Airsoft Site Venue</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+            Everything you need to know about Airsoft.<br>
+
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 about-img wow fadeInLeft">
+            <img src="{% static 'images/airsoft2.jpg' %}" alt="">
+          </div>
+
+          <div class="col-lg-8 content wow fadeInRight">
+            <div class="icon-box wow fadeInUp">
+            <div class="icon"><i class="fas fa-chevron-circle-right"></i></div>
+            <h3>What is Airsoft.</h3>
+
+            </div>
+            <p>
+              Put simply Airsoft is a hobby that allows adults and children to play soldiers (or Police or Space Marines) in a safe and controlled environment. It can be as realistic or as silly as you like and it's a game that is played on honesty and integrity.
+              The closest comparison would be Paintball, but without the paint and the expense.</p>
+              We use imitation firearms that fire 6mm plastic 'BBs' and rather than be splattered with paint to show a 'hit' we rely on the player to be honest and register when the bb hits them and respond with their arm in the air and a shout of 'Hit, Medic.' It really is a hobby that bridges age gaps and is also a great form of exercise. It can be as cheap or as expensive as you like with rental packages available to get a taste before buying any kit. Safety is paramount so every game is marshalled and all players are briefed on safety and the rules before being let loose.
+            <p>
+              <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fas fa-chevron-circle-right"></i></div>
+              <h3>So you play dress up and shoot each other?</h3>
+
+              </div>
+              <p>
+                Yes, yes we do, but it's more than that. Airsoft builds confidence,
+                 it promotes lateral and tactical thinking, it promotes team work and most of all it gets you outside and moving.
+              <p>
+                <div class="icon-box wow fadeInUp">
+                <div class="icon"><i class="fas fa-chevron-circle-right"></i></div>
+                <h3>But I want to play at other sites and shoot tin cans in my back garden.</h3>
+
+                </div>
+                <p>
+                  Ok, now this is the complicated bit.
+                  Obviously the Police take a very dim view of anyone running around with a imitation firearm
+                  outside of an insured site like Apocalypse so there are some rules we all have to abide by.
+                  Basically under Government legislation a retailer needs to ensure you have a specified reason for purchasing a realistic Imitation firearm.
+                  Now by realistic we mean anything that could be mistaken for the real thing in colour and looks.
+                  There are a few 'defences' that meet the criteria, one of which is membership of an Insured and Ukara registered Airsoft site like Apocalypse.   <p>
+                    <div class="icon-box wow fadeInUp">
+                    <div class="icon"><i class="fas fa-chevron-circle-right"></i></div>
+                    <h3>Ok, this sounds awesome do you cater for families, big groups or corporate bookings?</h3>
+
+                    </div>
+                    <p>
+                      Yes we do, we've the luxury of having up to 200 acres of playing field, all of it fine Kentish woodland so if you fancy celebrating a
+                      birthday or a stag/hen do or even want to book the site for some inter company score settling we can work with you to provide a memorable day out.
+                      <br>We run games each and every Sunday and often have special themed days and weekender's.
+
+                      <p>We pride ourselves on being friendly and a little bit different so why not give us a go?
+                        <div class="icon-box wow fadeInUp">
+                        <div class="icon"><i class="fas fa-chevron-circle-right"></i></div>
+                        <h3>Is Airsoft safe?</h3>
+
+                        </div>
+                        <p>
+                          Your health and safety are extremely important to us <br>
+                          Our fully trained and professional staff provide a full safety brief at the start of the day and in games
+                          Marshals ensure safe operation throughout your day. <br>
+                          Airsoft equipment like most things in life is perfectly safe provided you adhere to the rules and respect it and other players. <br>
+                          All players are required to read and sign an insurance waiver.
+            </div>
+        </div>
+
+      </div>
+    </section><!-- #about -->
+    <!--==========================
+    Call To Action Section
+    ============================-->
+    <section id="call-to-action">
+      <div class="container wow fadeIn">
+        <div class="row">
+          <div class="col-lg-9 text-center text-lg-left">
+            <h3 class="cta-title">Upcoming Events</h3>
+            <p class="cta-text"> We cater for a variety of events. From regular skirmish days to sniper ops to Under 18's only.</p>
+          </div>
+          <div class="col-lg-3 cta-btn-container text-center">
+            <a class="cta-btn align-middle" href="{% url 'bookings' %}">See our Upcoming Events</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- #call-to-action -->
+
+
+{% endblock %}

@@ -17,6 +17,7 @@
 
   <!-- Bootstrap CSS File -->
   <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet">
   <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
   <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
 
@@ -44,14 +45,14 @@
           <li class="{% if request.resolver_match.url_name == 'home' %}menu-active{% endif %}"><a href="{% url 'home' %}">Home</a></li>
           <li class="menu-has-children
           {% if request.resolver_match.url_name == 'venue' %}menu-active{% endif %}
-          {% if request.resolver_match.url_name == 'whatisairsoft' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'airsoft' %}menu-active{% endif %}
           {% if request.resolver_match.url_name == 'siterules' %}menu-active{% endif %}
           {% if request.resolver_match.url_name == 'waiver' %}menu-active{% endif %}
           {% if request.resolver_match.url_name == 'insurance' %}menu-active{% endif %}
           "><a href="#">About Us</a>
             <ul>
-              <li><a href="#">Venue</a></li>
-              <li><a href="#">What is Airsoft</a></li>
+              <li><a href="{% url 'venue' %}">Venue</a></li>
+              <li><a href="{% url 'airsoft' %}">What is Airsoft</a></li>
               <li><a href="#">Site Rules</a></li>
               <li><a href="#">Waiver Form</a></li>
               <li><a href="#">Insurance Details</a></li>
