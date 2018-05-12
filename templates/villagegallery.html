@@ -1,0 +1,31 @@
+{% load static %}
+
+{% block content%}
+<link href="{% static 'css/gallery.css' %}" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+<link rel="stylesheet" href="{% static 'css/fluid-gallery.css' %}">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<div class="container gallery-container">
+
+    <div class="tz-gallery">
+
+        <div class="row mb-3">
+
+          <p>this is village images</p>
+          {% for image in village_gallery %}
+            <div class="col-md-4">
+                <div class="card">
+                    <a class="lightbox" href="{{image.1}}">
+                    <img src="{{image.1}}" alt="Park" class="card-img-top rounded ">
+                    </a>
+                </div>
+            </div>
+
+        	{%  endfor %}
+        </div>
+
+     </div>
+
+ </div>
+{% endblock %}
