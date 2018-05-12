@@ -13,6 +13,9 @@ Village_Table = Airtable('appZJXumNCOFemo8r',
                                 'Village', api_key='keyoOFryShWQQ1qGs')
 SafeZone_Table = Airtable('appZJXumNCOFemo8r',
                                 'Safe Zone', api_key='keyoOFryShWQQ1qGs')
+OutliningStuff_Table = Airtable('appZJXumNCOFemo8r',
+                                'Outlining Stuff', api_key='keyoOFryShWQQ1qGs')
+
 
 def home(request):
     return render(request, 'home.html')
@@ -109,5 +112,16 @@ def safezone_gallery(request):
             safezone_gallery.append((images['fields']['Number'],
             images['fields']['One-Image'][0]['url']))
     safezone_gallery.sort(reverse=True)
-    # print(village_gallery)
+
     return render(request, 'safezonegallery.html', {'safezone_gallery':safezone_gallery})
+
+def outlining_gallery(request):
+    all_outlining_images = OutliningStuff_Table.get_all()
+    outlining_gallery = []
+    for images in all_outlining_images:
+        if 'One-Image' in images['fields'].keys():
+            outlining_gallery.append((images['fields']['Number'],
+            images['fields']['One-Image'][0]['url']))
+    outlining_gallery.sort(reverse=True)
+
+    return render(request, 'outlininggallery.html', {'outlining_gallery':outlining_gallery})
