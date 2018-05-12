@@ -40,6 +40,19 @@ Codepen: https://codepen.io/supah/
     <div class="row no-gutters popup-gallery">
       <div class="col-lg-4 col-sm-6">
         <a class="portfolio-box" href="{% url 'commandpost_gallery' %}">
+          <div >
+            {% for image in cp_gallery %}
+              {% for url in image.1 %}
+              <div class="col-md-4">
+                  <div class="card">
+                      <a class="lightbox" href="{{url}}">
+                      <img src="{{url}}" alt="Park" class="card-img-top rounded ">
+                      </a>
+                  </div>
+              </div>
+                  {% endfor %}
+          	{%  endfor %}
+          </div>
           <img class="img-fluid" src="{% static 'images/gallery/commandpost.fw.png' %}" alt="">
           <div class="portfolio-box-caption">
             <img class="img-fluid" src="{% static 'images/gallery/commandpost_blk.fw.png' %}" alt="">
@@ -95,6 +108,7 @@ Codepen: https://codepen.io/supah/
       </div>
     </div>
   </div>
+  
 
 <!-- commented out previous gallery images.
     we should get the same effect of the lightbox to display each image from the categories above.

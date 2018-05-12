@@ -1,0 +1,73 @@
+/* About Us Section
+--------------------------------*/
+#about {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+#about .about-img {
+  height: auto;
+  overflow: hidden;
+}
+
+#about .about-img img {
+
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  #about .about-img {
+    max-height: 100%;
+  }
+  #about .about-img img {
+    margin-left: 10;
+
+  }
+}
+
+#about .content .h2 {
+  color: #333;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+#about .content h3 {
+  color: #777;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: italic;
+}
+
+#about .icon-box .icon {
+  float: left;
+  background: #fff;
+}
+
+#about .icon-box .icon i {
+  color: #b20000;
+  font-size: 24px;
+}
+
+#about .content p {
+  line-height: 26px;
+}
+
+#about .content p:last-child {
+  margin-bottom: 0;
+}
+
+#about .content i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #1dc8cd;
+}
+
+#about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about .content ul li {
+  padding-bottom: 10px;
+}

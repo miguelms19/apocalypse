@@ -1,3 +1,4 @@
+{% extends 'headfoot.html' %}
 {% load static %}
 
 {% block content%}
@@ -6,13 +7,22 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
 <link rel="stylesheet" href="{% static 'css/fluid-gallery.css' %}">
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<section id="hero" class="gallery-bg">
+  <div class="hero-container">
+    <img src="{% static 'images/gallery_under.fw.png' %}" class='hero-image img-fluid'></img>
+  </div>
+</section>
+
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h1 class="display-4">The Under 18's Gallery</h1><p>
+
 <div class="container gallery-container">
 
     <div class="tz-gallery">
 
         <div class="row mb-3">
 
-          <p>this is under18 images</p>
           {% for image in under18_gallery %}
             {% for url in image.1 %}
             <div class="col-md-4">
@@ -29,4 +39,49 @@
      </div>
 
  </div>
+
+ <div class="container-fluid">
+   <div class="col-md-offset-1 col-md-10 content">
+   <div class="row">
+     <div class="card">
+       <a href="{% url 'commandpost_gallery' %}">
+       <img class="card-img-top" src="{% static 'images/gallery/commandpostsmall.fw.png' %}" alt="Card image cap">
+       </a>
+     </div>
+     <div class="card">
+       <a href="{% url 'outlining_gallery' %}">
+       <img class="card-img-top" src="{% static 'images/gallery/outliningsmall.fw.png' %}" alt="Card image cap">
+       </a>
+     </div>
+     <div class="card">
+       <a href="{% url 'safezone_gallery' %}">
+       <img class="card-img-top" src="{% static 'images/gallery/safezonesmall.fw.png' %}" alt="Card image cap">
+       </a>
+     </div>
+     <div class="card">
+       <a href="{% url 'trenches_gallery' %}">
+       <img class="card-img-top" src="{% static 'images/gallery/trenchessmall.fw.png' %}" alt="Card image cap">
+       </a>
+     </div>
+     <div class="card">
+       <a href="{% url 'under18_gallery' %}">
+       <img class="card-img-top" src="{% static 'images/gallery/undersmall.fw.png' %}" alt="Card image cap">
+       </a>
+     </div>
+     <div class="card">
+       <a href="{% url 'village_gallery' %}">
+       <img class="card-img-top" src="{% static 'images/gallery/villagesmall.fw.png' %}" alt="Card image cap">
+       </a>
+     </div>
+   </div>
+ </div>
+ </div>
+   </div>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js">
+
+ </script>
+ <script>
+     baguetteBox.run('.tz-gallery');
+ </script>
 {% endblock %}

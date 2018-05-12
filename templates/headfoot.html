@@ -72,7 +72,23 @@
               <li><a href="#">Corporate Events</a></li>
             </ul>
           </li>
-          <li class="{% if request.resolver_match.url_name == 'gallery' %}menu-active{% endif %}"><a href="{% url 'gallery' %}">Gallery</a></li>
+          <li class="menu-has-children
+          {% if request.resolver_match.url_name == 'commandpost_gallery' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'village_gallery' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'safezone_gallery' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'outlining_gallery' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'trenches_gallery' %}menu-active{% endif %}
+          {% if request.resolver_match.url_name == 'under18_gallery' %}menu-active{% endif %}
+          "><a href="#">Gallery</a>
+            <ul>
+              <li><a href="{% url 'commandpost_gallery' %}">Command Post</a></li>
+              <li><a href="{% url 'village_gallery' %}">The Village</a></li>
+              <li><a href="{% url 'safezone_gallery' %}">Safe Zone</a></li>
+              <li><a href="{% url 'outlining_gallery' %}">Outlining Structures</a></li>
+              <li><a href="{% url 'trenches_gallery' %}">Trenches</a></li>
+              <li><a href="{% url 'under18_gallery' %}">Under 18's</a></li>
+            </ul>
+          </li>
           <li class="{% if request.resolver_match.url_name == 'bookings' %}menu-active{% endif %}"><a href="{% url 'bookings' %}">Bookings</a></li>
         <!-- <li class="{% if request.resolver_match.url_name == 'blog' %}menu-active{% endif %}"><a href="{% url 'blog' %}">Blog</a></li> -->
           <li class="{% if request.resolver_match.url_name == 'shop' %}menu-active{% endif %}"><a href="http://www.apocalypse249.com/webstore/tomatocart/">Shop</a></li>
