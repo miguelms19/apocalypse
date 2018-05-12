@@ -11,7 +11,8 @@ Commandpost_Table= Airtable('appZJXumNCOFemo8r',
                 'Command Post', api_key='keyoOFryShWQQ1qGs')
 Village_Table = Airtable('appZJXumNCOFemo8r',
                                 'Village', api_key='keyoOFryShWQQ1qGs')
-
+SafeZone_Table = Airtable('appZJXumNCOFemo8r',
+                                'Safe Zone', api_key='keyoOFryShWQQ1qGs')
 
 def home(request):
     return render(request, 'home.html')
@@ -98,3 +99,15 @@ def village_gallery(request):
     village_gallery.sort(reverse=True)
     # print(village_gallery)
     return render(request, 'villagegallery.html', {'village_gallery':village_gallery})
+
+
+def safezone_gallery(request):
+    all_safezone_images = SafeZone_Table.get_all()
+    safezone_gallery = []
+    for images in all_safezone_images:
+        if 'One-Image' in images['fields'].keys():
+            safezone_gallery.append((images['fields']['Number'],
+            images['fields']['One-Image'][0]['url']))
+    safezone_gallery.sort(reverse=True)
+    # print(village_gallery)
+    return render(request, 'safezonegallery.html', {'safezone_gallery':safezone_gallery})

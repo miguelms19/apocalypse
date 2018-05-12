@@ -29,6 +29,7 @@ urlpatterns = [
     path('gallery/', views.gallery, name='gallery'),
     path('gallery/commandpost', views.commandpost_gallery, name='commandpost_gallery'),
     path('gallery/village', views.village_gallery, name='village_gallery'),
+    path('gallery/safezone', views.safezone_gallery, name='safezone_gallery'),
     path('bookings/', views.bookings, name='bookings'),
     path('blog/', views.blog, name='blog'),
     path('blog/<str:blog_id>/', views.eachblog, name='eachblog'),
