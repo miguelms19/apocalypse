@@ -94,8 +94,12 @@ def gallery_sort(table_data):
     sorted_gallery = []
     for images in table_data:
         if 'One-Image' in images['fields'].keys():
-            sorted_gallery.append((images['fields']['Number'],
-            images['fields']['One-Image'][0]['url']))
+            each_entry = []
+            for i in range(len(images['fields']['One-Image'])):
+                each_entry.append(images['fields']['One-Image'][i]['url'])
+
+            sorted_gallery.append((images['fields']['Number'],each_entry))
+
     sorted_gallery.sort(reverse=True)
     return sorted_gallery
 

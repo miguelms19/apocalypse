@@ -14,14 +14,15 @@
 
           <p>this is trenches images</p>
           {% for image in trenches_gallery %}
+            {% for url in image.1 %}
             <div class="col-md-4">
                 <div class="card">
-                    <a class="lightbox" href="{{image.1}}">
-                    <img src="{{image.1}}" alt="Park" class="card-img-top rounded ">
+                    <a class="lightbox" href="{{url}}">
+                    <img src="{{url}}" alt="Park" class="card-img-top rounded ">
                     </a>
                 </div>
             </div>
-
+                {% endfor %}
         	{%  endfor %}
         </div>
 
