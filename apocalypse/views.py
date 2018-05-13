@@ -113,37 +113,37 @@ def gallery_sort(table_data):
     return sorted_gallery
 
 
-def commandpost_gallery(request):
+def commandpost_gal(request):
     all_command_images = Commandpost_Table.get_all()
     cp_gallery = gallery_sort(all_command_images)
     return render(request, 'commandpostgallery.html', {'cp_gallery': cp_gallery})
 
 
-def village_gallery(request):
+def village_gal(request):
     all_village_images = Village_Table.get_all()
     village_gallery = gallery_sort(all_village_images)
     return render(request, 'villagegallery.html', {'village_gallery': village_gallery})
 
 
-def safezone_gallery(request):
+def safezone_gal(request):
     all_safezone_images = SafeZone_Table.get_all()
     safezone_gallery = gallery_sort(all_safezone_images)
     return render(request, 'safezonegallery.html', {'safezone_gallery': safezone_gallery})
 
 
-def outlining_gallery(request):
+def outlining_gal(request):
     all_outlining_images = OutliningStuff_Table.get_all()
     outlining_gallery = gallery_sort(all_outlining_images)
     return render(request, 'outlininggallery.html', {'outlining_gallery': outlining_gallery})
 
 
-def trenches_gallery(request):
+def trenches_gal(request):
     trenches_data = Trenches_Table.get_all()
     trenches_gallery = gallery_sort(trenches_data)
     return render(request, 'trenchesgallery.html', {'trenches_gallery': trenches_gallery})
 
 
-def under18_gallery(request):
+def under18_gal(request):
     under18_data = Under18_Table.get_all()
     under18_gallery = gallery_sort(under18_data)
     return render(request, 'under18gallery.html', {'under18_gallery': under18_gallery})
