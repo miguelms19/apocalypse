@@ -3,10 +3,10 @@ from airtable import Airtable
 from datetime import datetime
 
 Event_Table = Airtable('apptkUXfhIKkSCft0',  # base_id
-              'Events', api_key='keyoOFryShWQQ1qGs') #apikey
+              'Events', api_key='keyIfzlVTwjAtKwvS') #apikey
 
 Date_Table = Airtable('apptkUXfhIKkSCft0',  # base_id
-              'Dates', api_key='keyoOFryShWQQ1qGs') #apikey
+              'Dates', api_key='keyIfzlVTwjAtKwvS') #apikey
 
 # Create your views here.
 def events(request):
