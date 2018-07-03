@@ -4,21 +4,21 @@ from airtable import Airtable
 from datetime import datetime
 
 Gallery_Table = Airtable('appZJXumNCOFemo8r',  # base_id
-                         'Gallery Page', api_key='keyoOFryShWQQ1qGs')  # apikey
+                         'Gallery Page', api_key='keyIfzlVTwjAtKwvS')  # apikey
 Blog_Table = Airtable('appf9kdwo9dS1DiM8',
-                      'Blog', api_key='keyoOFryShWQQ1qGs')
+                      'Blog', api_key='keyIfzlVTwjAtKwvS')
 Commandpost_Table = Airtable('appZJXumNCOFemo8r',
-                             'Command Post', api_key='keyoOFryShWQQ1qGs')
+                             'Command Post', api_key='keyIfzlVTwjAtKwvS')
 Village_Table = Airtable('appZJXumNCOFemo8r',
-                         'Village', api_key='keyoOFryShWQQ1qGs')
+                         'Village', api_key='keyIfzlVTwjAtKwvS')
 SafeZone_Table = Airtable('appZJXumNCOFemo8r',
-                          'Safe Zone', api_key='keyoOFryShWQQ1qGs')
+                          'Safe Zone', api_key='keyIfzlVTwjAtKwvS')
 OutliningStuff_Table = Airtable('appZJXumNCOFemo8r',
-                                'Outlining Stuff', api_key='keyoOFryShWQQ1qGs')
+                                'Outlining Stuff', api_key='keyIfzlVTwjAtKwvS')
 Trenches_Table = Airtable('appZJXumNCOFemo8r',
-                          'Trenches', api_key='keyoOFryShWQQ1qGs')
+                          'Trenches', api_key='keyIfzlVTwjAtKwvS')
 Under18_Table = Airtable('appZJXumNCOFemo8r',
-                         'Under 18', api_key='keyoOFryShWQQ1qGs')
+                         'Under 18', api_key='keyIfzlVTwjAtKwvS')
 
 
 def home(request):
